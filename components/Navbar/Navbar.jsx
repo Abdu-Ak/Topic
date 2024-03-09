@@ -68,7 +68,7 @@ const Navbar = () => {
           className="navbar-nav order-2 hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5"
         >
           <li className="nav-item">
-            <a href="#" className="nav-link active">Home</a>
+            <a href="#" className="nav-link ">Home</a>
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link">About</a>
