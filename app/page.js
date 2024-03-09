@@ -9,11 +9,10 @@ export default function Home() {
     <div class="row items-center">
       <div class="lg:col-6">
         <h1 class="banner-title">
-          Scale design & dev operations with Avocode Enterprise
+        Empower Your Learning Journey with Our Education Application
         </h1>
         <p class="mt-6">
-          A fully integrated suite of authentication & authoriz products,
-          Stytch’s platform removes the headache of.
+        Embark on a Comprehensive Educational Experience: Discover, Learn, and Grow with Our Innovative Application
         </p>
         <a class="btn btn-white mt-8" href="#">Join us</a>
       </div>
