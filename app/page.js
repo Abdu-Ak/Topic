@@ -1,113 +1,484 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
+      <>
+     {/* <!-- Banner --> */}
+<section class="section banner relative ">
+  <div class="container">
+    <div class="row items-center">
+      <div class="lg:col-6">
+        <h1 class="banner-title">
+          Scale design & dev operations with Avocode Enterprise
+        </h1>
+        <p class="mt-6">
+          A fully integrated suite of authentication & authoriz products,
+          Stytch’s platform removes the headache of.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <a class="btn btn-white mt-8" href="#">Join us</a>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div class="lg:col-6">
+        <img
+          class="w-full object-contain"
+          src="images/banner-img.png"
+          width="603"
+          height="396"
+          alt=""
         />
       </div>
+    </div>
+  </div>
+  <img
+    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
+    src="images/banner-shape.svg"
+    alt=""
+  />
+</section>
+{/* <!-- ./end Banner --> */}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+{/* <!-- Key features --> */}
+<section class="section key-feature relative">
+  <img
+    class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
+    src="images/icons/feature-shape.svg"
+    alt=""
+  />
+  <div class="container">
+    <div class="row justify-between text-center lg:text-start">
+      <div class="lg:col-5">
+        <h2>The Highlighting Part Of Our Solution</h2>
       </div>
-    </main>
+      <div class="mt-6 lg:col-5 lg:mt-0">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
+          Werat viverra id et aliquet. vulputate egestas sollicitudin .
+        </p>
+      </div>
+    </div>
+    <div
+      class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4"
+    >
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Live Caption</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-1.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-2.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-3.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-4.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-5.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-6.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-7.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-8.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-9.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div
+        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+      >
+        <div>
+          <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <span class="icon mt-4">
+          <img
+            class="objec-contain"
+            src="images/icons/feature-icon-10.svg"
+            alt=""
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <!-- ./end Key features --> */}
+
+{/* <!-- Services --> */}
+<section class="section services">
+  <div class="container">
+    <div class="tab row gx-5 items-center" data-tab-group="integration-tab">
+      <div class="lg:col-7 lg:order-2">
+        <div class="tab-content" data-tab-content>
+          <div class="tab-content-panel active" data-tab-panel="0">
+            <img
+              class="w-full object-contain"
+              src="images/sells-by-country.png"
+            />
+          </div>
+          <div class="tab-content-panel" data-tab-panel="1">
+            <img class="w-full object-contain" src="images/collaboration.png" />
+          </div>
+          <div class="tab-content-panel" data-tab-panel="2">
+            <img
+              class="w-full object-contain"
+              src="images/sells-by-country.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
+        <div class="text-container">
+          <h2 class="lg:text-4xl">
+            Prevent failure from to impacting your reputation
+          </h2>
+          <p class="mt-4">
+            Our platform helps you build secure onboarding authentication
+            experiences that retain and engage your users. We build the
+            infrastructure, you can.
+          </p>
+          <ul class="tab-nav -ml-4 mt-8 border-b-0" data-tab-nav>
+            <li class="tab-nav-item active" data-tab="0">
+              <img class="mr-3" src="images/icons/drop.svg" alt="" />
+              Habit building essential choose habit
+            </li>
+            <li class="tab-nav-item" data-tab="1">
+              <img class="mr-3" src="images/icons/brain.svg" alt="" />
+              Get an overview of Habit Calendars.
+            </li>
+            <li class="tab-nav-item" data-tab="2">
+              <img class="mr-3" src="images/icons/timer.svg" alt="" />
+              Start building with Habitify platform
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row gx-5 mt-12 items-center lg:mt-0">
+      <div class="lg:col-7">
+        <div class="relative">
+          <img class="w-full object-contain" src="images/collaboration.png" />
+          <img
+            class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
+            src="images/shape.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="mt-6 lg:col-5 lg:mt-0">
+        <div class="text-container">
+          <h2 class="lg:text-4xl">
+            Accept payments any country in this whole universe
+          </h2>
+          <p class="mt-4">
+            Donec sollicitudin molestie malesda. Donec sollitudin molestie
+            malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
+            ligula sed
+          </p>
+          <ul class="mt-6 text-dark lg:-ml-4">
+            <li class="mb-2 flex items-center rounded px-4">
+              <img
+                class="mr-3"
+                src="images/icons/checkmark-circle.svg"
+                alt=""
+              />
+              Supporting more than 119 country world
+            </li>
+            <li class="mb-2 flex items-center rounded px-4">
+              <img
+                class="mr-3"
+                src="images/icons/checkmark-circle.svg"
+                alt=""
+              />
+              Open transaction with more than currencies
+            </li>
+            <li class="flex items-center rounded px-4">
+              <img
+                class="mr-3"
+                src="images/icons/checkmark-circle.svg"
+                alt=""
+              />
+              Customer Service with 79 languages
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row gx-5 mt-12 items-center lg:mt-0">
+      <div class="lg:col-7 lg:order-2">
+        <div class="video pb-5 pr-9">
+          <div class="video-thumbnail overflow-hidden rounded-2xl">
+            <img
+              class="w-full object-contain"
+              src="images/intro-thumbnail.png"
+              alt=""
+            />
+            <button class="video-play-btn">
+              <img src="images/icons/play-icon.svg" alt="" />
+            </button>
+          </div>
+          <div
+            class="video-player absolute left-0 top-0 z-10 hidden h-full w-full"
+          >
+            <iframe
+              class="h-full w-full"
+              allowfullscreen=""
+              src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"
+            ></iframe>
+          </div>
+          <img
+            class="intro-shape absolute bottom-0 right-0 -z-[1]"
+            src="images/shape.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
+        <div class="text-container">
+          <h2 class="lg:text-4xl">Accountability that works for you</h2>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
+            .
+          </p>
+          <button class="btn btn-white mt-6">know about us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <!-- ./end Services --> */}
+
+{/* <!-- Reviews --> */}
+<section class="reviews">
+  <div class="container">
+    <div class="row justify-between">
+      <div class="lg:col-6">
+        <h2>Our customers have nice things to say about us</h2>
+      </div>
+      <div class="lg:col-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
+          Werat viverra id et aliquet. vulputate egestas sollicitudin .
+        </p>
+      </div>
+    </div>
+    <div class="row mt-10">
+      <div class="col-12">
+        <div class="swiper reviews-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review">
+                <div class="review-author-avatar bg-gradient">
+                  <img src="images/users/user-5.png" alt="" />
+                </div>
+                <h4 class="mb-2">Courtney Henry</h4>
+                <p class="mb-4 text-[#666]">microsoft corp</p>
+                <p>
+                  Our platform helps build secure onboarding authentica
+                  experiences & engage your users. We build .
+                </p>
+                <div
+                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                >
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review">
+                <div class="review-author-avatar bg-gradient">
+                  <img src="images/users/user-2.png" alt="" />
+                </div>
+                <h4 class="mb-2">Ronald Richards</h4>
+                <p class="mb-4 text-[#666]">meta limited</p>
+                <p>
+                  Our platform helps build secure onboarding authentica
+                  experiences & engage your users. We build .
+                </p>
+                <div
+                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                >
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review">
+                <div class="review-author-avatar bg-gradient">
+                  <img src="images/users/user-6.png" alt="" />
+                </div>
+                <h4 class="mb-2">Bessie Cooper</h4>
+                <p class="mb-4 text-[#666]">apple inc ltd</p>
+                <p>
+                  Our platform helps build secure onboarding authentica
+                  experiences & engage your users. We build .
+                </p>
+                <div
+                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                >
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
+                  <img src="images/icons/star-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- If we need pagination --> */}
+          <div
+            class="swiper-pagination reviews-carousel-pagination !bottom-0"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <!-- Reviews --> */}
+
+{/* <!-- Call To action --> */}
+<section class="px-5 py-20 xl:py-[120px]">
+  <div class="container">
+    <div
+      class="bg-gradient row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16"
+    >
+      <div class="lg:col-11">
+        <div class="row">
+          <div class="lg:col-7">
+            <h2 class="h1 text-white">Helping teams in the world with focus</h2>
+            <a class="btn btn-white mt-8" href="#">Join us</a>
+          </div>
+          <div class="mt-8 lg:col-5 lg:mt-0">
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </>
   );
 }
